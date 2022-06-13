@@ -1,7 +1,7 @@
 function merged_data = tes3matlab_merge(file_data,opts)
 
     % Load backup if it exists
-    bkup_file = [opts.bkup_dir '\' opts.bkup_name '_merged.mat'];
+    bkup_file = [opts.bkup_dir '\_' opts.project_name '.mat'];
     if(opts.bkup_data==true & exist(bkup_file,'file')==true)
         tmp = load(bkup_file);
         merged_data = tmp.merged_data;

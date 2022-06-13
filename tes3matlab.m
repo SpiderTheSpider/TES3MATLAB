@@ -15,21 +15,24 @@
 %       to show the recommended call syntax and order
 Breaker = false(99,1);
 %-------------------%
-Breaker(01) = 1;	% Load/extract data from specified list of files
-Breaker(02) = 0;	% Merge data from multiple files into 1 data structure
+Breaker(01) = 0;	% Load/extract data from specified list of files
+Breaker(02) = 1;	% Merge data from multiple files into 1 data structure
 Breaker(03) = 0;    % Generate specified world map(s)
 Breaker(04) = 0;    % Draw specified map(s)
 Breaker(05) = 0;    % Display and/or export specified map(s)
 %-------------------%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-if(Breaker(01))
+% OPTIONS
     
     % First things first, add dir with sub-functions to MATLAB'S $PATH
     addpath('.\functions');
     
     % Options structure
     opts = struct;
+    
+    % Project name (for backup and exported file naming)
+    opts.project_name = 'vanilla';
     
     % Text file containing list of TES3 files to extract data from
     % NOTE: Make sure the load order is the same as what is used in-game!
@@ -62,7 +65,7 @@ if(Breaker(01))
     
     % Backup directory, where extracted data is stored so you don't have to
     % run the extraction every time
-    opts.bkup_dir = '.\backups\';
+    opts.bkup_dir  = '.\backups\';
     
     % Global options
     % NOTE: You SHOULD change these to suit your needs!  
@@ -88,7 +91,7 @@ if(Breaker(01))
     opts.dims.cell_ggrid = 40;      % Length of a cell in GridMap image file
     opts.dims.cell_mgrid = 9;       % Length of a cell in mini map grid
 
-end
+% END OPTIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if(Breaker(01)); file_data = tes3matlab_extract(opts);                  end
 if(Breaker(02)); merged_data = tes3matlab_merge(file_data,opts);        end
