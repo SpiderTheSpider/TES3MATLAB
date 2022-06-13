@@ -1,0 +1,1 @@
+Exported datums and maps will be saved to this directory under the sub-directory 'project_name'.
