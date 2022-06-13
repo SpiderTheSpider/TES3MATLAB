@@ -4,7 +4,7 @@ A suite of tools for extracting and visualizing landscape data from TES3 Morrowi
 tes3matlab  
 The primary code.  Use this to define options and run the other tools.
 
-file_data = tes3matlab_extract(file_name,opts)  
+file_data = tes3matlab_extract(opts)  
 Extract the data associated with the exterior landscape from the specified TES3 master or plugin file(s)
 
 
