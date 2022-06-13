@@ -1,5 +1,5 @@
 # TES3MATLAB
-A suite of tools for extracting and visualizing landscape data from TES3 Morrowind and its mods.  The following are one-sentence summaries of each function, see their help documentation for a full description of what they do and how they do it.  
+A suite of tools for extracting and visualizing landscape data from TES3 Morrowind and its mods.  The following are one-sentence summaries of each function.
 
 tes3matlab  
 The primary code.  Use this to define options and run the other tools.
