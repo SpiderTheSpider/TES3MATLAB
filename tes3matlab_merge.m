@@ -323,13 +323,11 @@ function merged_data = tes3matlab_merge(file_data,opts)
                 for iy=1:16
                 if(merged_data.land(i).vtex(ix,iy)>0)    
 
+                    % NOTE: VTEX LINKS TO INTV+1, SO VTEX=0 MEANS USE _LAND_DEFAULT
                     jj = find(merged_data.intv_link{merged_data.land(i).file}(:,2)+1==merged_data.land(i).vtex(ix,iy));
-                    if(numel(jj)~=1)
-                        pause(1);
-                    else
+                    if(numel(jj)==1)
                         merged_data.land(i).ltex(ix,iy) = merged_data.intv_link{merged_data.land(i).file}(jj,1);
-                    end
-
+                    end   
                 end
                 end
                 end
@@ -347,11 +345,6 @@ function merged_data = tes3matlab_merge(file_data,opts)
             end
             end
             clear ix iy;
-
-    %         % Compute face height (fhgt) from absolute vertex height
-    %         tmp = single(merged_data.land(i).ahgt);
-    %         merged_data.land(i).fhgt = (tmp(1:end-1,1:end-1) + tmp(2:end,1:end-1) + tmp(1:end-1,2:end) + tmp(2:end,2:end) )./4;
-    %         clear tmp;
 
         end
         clear i;
