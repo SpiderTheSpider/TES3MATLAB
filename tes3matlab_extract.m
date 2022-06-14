@@ -479,5 +479,4 @@ function file_data = tes3matlab_extract(opts)
     end
     clear i n_file;
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 end
