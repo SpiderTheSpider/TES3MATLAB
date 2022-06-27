@@ -1,5 +1,0 @@
-Store image files here.  See tes3matlab.m for suggested directory structure.  
-
-To avoid permissions issues I will not upload any image files here that I did not create myself, but here are links to some:
-
-Gridmap (last updated 27/08/2020): https://www.nexusmods.com/morrowind/mods/46821
