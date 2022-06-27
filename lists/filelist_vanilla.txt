@@ -1,4 +1,0 @@
-C:\Games\Steam\steamapps\common\Morrowind\Data Files\Morrowind.esm
-C:\Games\Steam\steamapps\common\Morrowind\Data Files\Tribunal.esm
-C:\Games\Steam\steamapps\common\Morrowind\Data Files\Bloodmoon.esm
-C:\Games\Steam\steamapps\common\Morrowind\Data Files\Siege at Firemoth.esp
