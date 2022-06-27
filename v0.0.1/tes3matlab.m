@@ -100,4 +100,5 @@ if(Breaker(11));    [ltex_img, ltex_clr] = tes3matlab_get_ltex({merged_data.ltex
 if(Breaker(12));    [cmap_img, cmap_info] = tes3matlab_get_cmap([merged_data.land.xy],opts.cmap_dir);	end
 if(Breaker(13));    [ztest_log, ctest_log, ttest_log] = tes3matlab_seamtests(merged_data);              end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-if(Breaker(21));    tes3matlab_drawmap_ltex(map_data.ltex,ltex_clr,opts.dir_xprt);      end
+% tes3matlab_draw_gridmap is currently a stand-alone since it's still in development, 
+% so far, maps and images have been generated individually and may be separated into separate functions in the next release
