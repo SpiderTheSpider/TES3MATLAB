@@ -6,10 +6,6 @@
 % then display and/or exports specified maps to image files.
 % 
 % by Spider the spider
-% 06/04/2022: v0.00 init
-% 06/06/2022: v0.01 init
-% 06/13/2022: v0.02 init
-% 06/24/2022: v0.03 init
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Breaker Box: Specify here which functions you want to run
@@ -18,16 +14,15 @@
 Breaker = false(99,1);
 %-------------------%
 Breaker(01) = 1;    % Define options, constants, and project directories
-Breaker(02) = 1;	% Load/extract data from specified list of files
-Breaker(03) = 1;	% Merge data from multiple files into 1 world structure
-Breaker(04) = 1;    % Generate specified world map(s)
+Breaker(02) = 0;	% Load/extract data from specified list of files
+Breaker(03) = 0;	% Merge data from multiple files into 1 world structure
+Breaker(04) = 0;    % Generate specified world map(s)
 %-------------------%
-Breaker(11) = 1;    % Gather land textures
-Breaker(12) = 1;    % Gather CreateMaps images
+Breaker(11) = 0;    % Gather land textures
+Breaker(12) = 0;    % Gather CreateMaps images
 Breaker(13) = 0;    % Perform seam tests
 %-------------------%
-Breaker(21) = 0;    % Draw land texture map(s)
-Breaker(22) = 0;    % Draw gridmap layers
+Breaker(21) = 0;    % Draw gridmap layers
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % OPTIONS
